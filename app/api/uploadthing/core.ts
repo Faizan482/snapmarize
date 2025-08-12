@@ -17,9 +17,9 @@ export const ourFileRouter = {
   }).onUploadComplete(async ({file, metadata}) => {
     // This function runs on every file upload completion
     // You can use it to save the file metadata to your database, send notifications, etc.
-    console.log("File uploaded:", file.url);
+    console.log("File uploaded:", file);
     console.log("Metadata:", metadata.userId);
-    return {userId:metadata.userId,file:file}
+    return {userId:metadata.userId,file}
   }) 
 }satisfies FileRouter;
 export type OurFileRouter = typeof ourFileRouter;
