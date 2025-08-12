@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 
 interface UploadFormInputProps {
   onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
-  fileInputRef?: React.RefObject<HTMLInputElement>;
+  fileInputRef?: React.RefObject<HTMLInputElement | null>;
   disabled?: boolean; // 🔹 new prop
   buttonLabel?: string; // 🔹 new prop
 }

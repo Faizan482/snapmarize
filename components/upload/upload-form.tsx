@@ -30,7 +30,7 @@ export default function UploadForm() {
       toast.error("Upload failed. Please try again.");
       setLoading(false); // stop loader
     },
-    onUploadBegin: ({ file }) => {
+    onUploadBegin: ({ file }:any) => {
       console.log("Upload started for file:", file);
     },
   });

@@ -73,7 +73,7 @@ export async function generateSummaryFromOpenAI(pdfText: string) {
   } catch (error: any) {
     console.error("Error generating summary:", error);
     if (error?.status === 429) {
-      throw new Error("Rate_Limit_Exceeded");
+      throw new Error("RATE_LIMIT_EXCEEDED");
     }
     throw error;
   }
