@@ -61,7 +61,7 @@ export default function PricingSection() {
     setSelectedPlan(planName);
   };
   return (
-    <section className="relative overflow-hidden  mx-auto">
+    <section id="pricing" className="relative overflow-hidden  mx-auto">
       <div className="w-full max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-12">
